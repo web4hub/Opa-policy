@@ -51,6 +51,10 @@ is_validatingwebhookconfig := kind == "ValidatingWebhookConfiguration"
 
 is_computeclass := kind == "ComputeClass"
 
+is_validatingadmissionpolicy := kind == "ValidatingAdmissionPolicy"
+
+is_validatingadmissionpolicybinding := kind == "ValidatingAdmissionPolicyBinding"
+
 is_job if {
 	true in [kind == "CronJob", kind == "Job"]
 }

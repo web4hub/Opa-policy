@@ -52,4 +52,10 @@ test_allow_non_namespaced_kinds if {
 
 	computeclass := {"kind": "ComputeClass", "metadata": {"name": "test"}}
 	t.no_errors(deny_default_namespace) with input as computeclass
+
+	validatingadmissionpolicy := {"kind": "ValidatingAdmissionPolicy", "metadata": {"name": "test"}}
+	t.no_errors(deny_default_namespace) with input as validatingadmissionpolicy
+
+	validatingadmissionpolicybinding := {"kind": "ValidatingAdmissionPolicyBinding", "metadata": {"name": "test"}}
+	t.no_errors(deny_default_namespace) with input as validatingadmissionpolicybinding
 }
