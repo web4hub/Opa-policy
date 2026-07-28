@@ -44,6 +44,8 @@ deny_default_namespace contains msg if {
 		is_podsecuritypolicy,
 		is_validatingwebhookconfig,
 		is_computeclass,
+		is_validatingadmissionpolicy,
+		is_validatingadmissionpolicybinding,
 	]
 
 	not valid_namespace
